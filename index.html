@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyng">
+    <meta name="description" content="This is a website about clothes">
+    <meta name="language" content="English">
+    <meta name="date" content="2024-1-1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Website Icon -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Yum Palette T</title>
+</head>
+<style>
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        margin-top: 40px;
+    }
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-brand me-4"><i class="bi bi-bag-check"></i>Delivery</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner text-white ">
+            <div class="carousel-item text-center bg-dark vh-100 active showcase-1 bg-cover">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="text-white">Discover Exquisite Flavors</h4>
+                            <h1 class="display-1 fw-bold text-white">Indulge in Culinary Delights</h1>
+                            <a href="#reservation" class="btn btn-brand mt-2">Make a Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-dark vh-100 showcase-2 bg-cover">
+                <div class="container h-100 d-flex align-items-center justify-content-center ">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Explore Unique Taste Experiences</h4>
+                            <h1 class="display-1 fw-bold">Savor Every Bite</h1>
+                            <a href="#reservation" class="btn btn-brand mt-2">Make a Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 me-5">
+                    <img src="#" alt="about" id="aboutImg">
+                </div>
+                <div class="col-lg-5 mt-4">
+                    <h1 class="text-dark">About us</h1>
+                    <div class="line mb-3 lead"></div>
+                    <p class="lead">Welcome to Yum Palette T, where passion for food meets a delightful dining
+                        experience. Our culinary journey began with a simple idea: to create a space where people can
+                        enjoy exquisite flavors in a warm and inviting atmosphere.</p>
+                    <p class="lead">At Yum Palette T, we believe in the power of good food to bring people together. Our
+                        menu is carefully crafted to offer a diverse selection of dishes that cater to all tastes. From our
+                        signature appetizers to our decadent desserts, every dish is prepared with the freshest ingredients 
+                        and a touch of love. Whether you're here for a casual meal or a special occasion, we strive to make 
+                        every visit memorable. Join us and experience the joy of great food in a place that feels like home.
+                    </p>
+                    <a href="" class="btn btn-brand">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold text-dark">Our Menu</h1>
+                    <p class="pb-4 lead">Explore our diverse menu crafted with passion and creativity. From savory
+                        appetizers to indulgent desserts, each dish is a masterpiece that promises a delightful culinary
+                        experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-bold" id="pills-all-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                        aria-selected="true"><i class="bi bi-fire"></i>
+                        Popular dishes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Breakfast</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+                        type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                        type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+                </li>
+            </ul>
+
+            <!-- Popular dishes -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Spaghetti Bolognese">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spaghetti Bolognese</h5>
+                                    <p class="card-text">Savor the classic taste of our rich and flavorful Spaghetti
+                                        Bolognese,
+                                        crafted with the finest ingredients and love.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Chicken curry">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken curry</h5>
+                                    <p class="card-text">Indulge in the aromatic flavors of our signature Chicken Curry,
+                                        a perfect blend of
+                                        spices and tender chicken pieces, creating a delightful culinary experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Sirloin steak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sirloin steak</h5>
+                                    <p class="card-text">Experience the succulence of our premium Sirloin Steak,
+                                        expertly grilled to perfection
+                                        and served with delectable accompaniments for a truly satisfying dining
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Margherita pizza">
+                                <div class="card-body">
+                                    <h5 class="card-title">Margherita pizza</h5>
+                                    <p class="card-text">Indulge in the simplicity and deliciousness of our Margherita
+                                        Pizza, featuring
+                                        fresh tomato sauce, mozzarella cheese, and basil on a perfectly baked crust.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img" alt="Sushi">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sushi</h5>
+                                    <p class="card-text">Embark on a culinary journey with our exquisite Sushi
+                                        selection. Each piece is
+                                        meticulously crafted for a delightful blend of flavors and textures.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img" 
+                                    alt="Veggie burger">
+                                <div class="card-body">
+                                    <h5 class="card-title">Veggie burger</h5>
+                                    <p class="card-text">Indulge in the goodness of our Veggie Burger, a
+                                        mouthwatering delight crafted with
+                                        flavorful veggie patties, fresh vegetables, and our special sauce for a
+                                        satisfying and wholesome
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Barbecue ribs">
+                                <div class="card-body">
+                                    <h5 class="card-title">Barbecue ribs</h5>
+                                    <p class="card-text">Savor the smoky goodness of our Barbecue Ribs, expertly
+                                        cooked to perfection and
+                                        glazed with our signature barbecue sauce. A true delight for barbecue
+                                        enthusiasts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Chicken soup">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken soup</h5>
+                                    <p class="card-text">Experience warmth and comfort with our nourishing Chicken
+                                        Soup, made with tender
+                                        chicken, fresh vegetables, and aromatic herbs. A soul-soothing bowl for any
+                                        occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top popular-dish-img"
+                                    alt="Tiramisu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tiramisu</h5>
+                                    <p class="card-text">Indulge in the heavenly delight of our Tiramisu, a classic
+                                        Italian dessert made with
+                                        layers of coffee-soaked ladyfingers, rich mascarpone cheese, and a dusting
+                                        of cocoa. Each bite is a
+                                        symphony of flavors and textures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breakfast -->
+                <div class="tab-pane fade show " id="pills-breakfast" role="tabpanel"
+                    aria-labelledby="pills-breakfast-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top breakfast-img"
+                                    alt="Scrambled eggs">
+                                <div class="card-body">
+                                    <h5 class="card-title">Scrambled eggs</h5>
+                                    <p class="card-text">Start your day right with our delicious Scrambled Eggs.
+                                        Fluffy and perfectly
+                                        seasoned, served with your choice of sides for a hearty breakfast
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top breakfast-img"
+                                    alt="Oatmeal">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oatmeal</h5>
+                                    <p class="card-text">Kickstart your morning with our wholesome Oatmeal. A
+                                        nutritious blend of rolled oats,
+                                        served warm and topped with your favorite fruits and nuts for a hearty and
+                                        healthy breakfast.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top breakfast-img"
+                                    alt="Greek yogurt">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greek yogurt</h5>
+                                    <p class="card-text">Indulge in the creamy goodness of our Greek Yogurt. Served
+                                        with a medley of fresh
+                                        berries and a drizzle of honey, it's a delightful and refreshing choice for
+                                        a nutritious breakfast.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top breakfast-img" alt="Toast">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toast</h5>
+                                    <p class="card-text">Enjoy the simplicity of our perfectly toasted bread.
+                                        Whether topped with jam, butter,
+                                        or your favorite spread, our Toast is a classic and comforting choice for
+                                        breakfast.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch -->
+                <div class="tab-pane fade show " id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top lunch-img"
+                                    alt="Grilled chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grilled chicken</h5>
+                                    <p class="card-text">Savor the taste of perfection with our Grilled Chicken.
+                                        Juicy and seasoned to
+                                        perfection, it's a delightful choice for a satisfying and wholesome lunch.
+                                        Served with your
+                                        favorite sides for a complete meal experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top lunch-img"
+                                    alt="Spaghetti">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spaghetti</h5>
+                                    <p class="card-text">Indulge in the classic Italian flavors with our Spaghetti.
+                                        Perfectly cooked pasta
+                                        tossed in rich tomato sauce and topped with Parmesan cheese. A timeless and
+                                        satisfying choice for
+                                        lunch.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top lunch-img"
+                                    alt="Hummus">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hummus</h5>
+                                    <p class="card-text">Delight your taste buds with our creamy and flavorful
+                                        Hummus. Served with fresh
+                                        vegetables and warm pita bread, it's a delicious and nutritious option for a
+                                        light and satisfying
+                                        lunch.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top lunch-img"
+                                    alt="Teriyaki chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Teriyaki chicken</h5>
+                                    <p class="card-text">Experience the savory goodness of our Teriyaki Chicken.
+                                        Grilled to perfection and
+                                        glazed with a sweet and tangy teriyaki sauce, it's a mouthwatering choice
+                                        for a fulfilling lunch
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dinner -->
+                <div class="tab-pane fade show " id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top dinner-img"
+                                    alt="Chicken breast">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken breast</h5>
+                                    <p class="card-text">Indulge in the succulent flavors of our Grilled Chicken
+                                        Breast. Marinated to
+                                        perfection and grilled to a juicy tenderness, it's a delightful choice for a
+                                        wholesome and fulfilling
+                                        dinner.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top dinner-img"
+                                    alt="Arborio rice">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arborio rice</h5>
+                                    <p class="card-text">Savor the richness of our Arborio Rice. Cooked to
+                                        perfection and paired with
+                                        flavorful ingredients, it's a delectable and comforting choice for a hearty
+                                        dinner experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top dinner-img"
+                                    alt="Sliced beef">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sliced beef</h5>
+                                    <p class="card-text">Experience the savory goodness of our Sliced Beef. Tender
+                                        and flavorful, it's a
+                                        mouthwatering choice for a satisfying dinner. Served with your favorite
+                                        sides for a complete meal
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="#" class="card-img-top dinner-img"
+                                    alt="Salmon fillet">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salmon fillet</h5>
+                                    <p class="card-text">Delight in the richness of our Grilled Salmon Fillet.
+                                        Cooked to perfection and
+                                        seasoned with exquisite flavors, it's a luxurious choice for a memorable and
+                                        delicious dinner
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="my-5 pt-5">
+        <div class="container ">
+            <div class="row mb-5">
+                <div class="text-center">
+                    <h1>Why to choose us?</h1>
+                    <p class="lead">Explore the exceptional features that set us apart and make us the perfect choice
+                        for your dining pleasure. Immerse
+                        yourself in a world of quality, speed, freshness, and top-notch service!</p>
+                </div>
+            </div>
+            <div class="row mb-5 pb-5">
+                <div class="col-lg-3 col-sm-6 pt-4">
+                    <div class="feature pt-4 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-emoji-laughing"></i>
+                        </div>
+                        <h3 class="mt-4 mb-2">Quality Products/Services</h3>
+                        <p class="lead">We take pride in offering high-quality products and services. Our commitment to
+                            excellence ensures that
+                            you receive the finest dining experience with every order.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-4">
+                    <div class="feature pt-4 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning-fill"></i>
+                        </div>
+                        <h3 class="mt-4 mb-2">Fast Delivery</h3>
+                        <p class="lead">Enjoy prompt and efficient delivery services. We understand the importance of
+                            timely delivery, and our
+                            dedicated team ensures that your orders reach you swiftly.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-4">
+                    <div class="feature pt-4 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                        </div>
+                        <h3 class="mt-4 mb-2">Fresh and Quality Ingredients</h3>
+                        <p class="lead">Savor the taste of freshness with our use of high-quality ingredients. We source
+                            the freshest produce to
+                            create dishes that delight your taste buds.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-4">
+                    <div class="feature pt-4 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h3 class="mt-4 mb-2">Highly rated</h3>
+                        <p class="lead">Our commitment to excellence has earned us high ratings from our satisfied
+                            customers. Join the ranks of
+                            those who have experienced exceptional service and culinary delights.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-dark">Our Team Members</h1>
+                    <p class="lead">Meet the passionate individuals who make our team exceptional.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member border border-1 p-4">
+                        <img src="#" alt="Main Chef"
+                            class=" rounded-circle team-img">
+                        <div class="team-member-content text-center mt-4">
+                            <h4 class="text-dark">John</h4>
+                            <p class="mb-0">Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member border border-1 p-4">
+                        <img src="#" alt="Assistant Chef"
+                            class=" rounded-circle team-img">
+                        <div class="team-member-content text-center mt-4">
+                            <h4 class="text-dark">Ali</h4>
+                            <p class="mb-0">Assistant Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member border border-1 p-4">
+                        <img src="#" alt="Restaurant Manager"
+                            class=" rounded-circle team-img">
+                        <div class="team-member-content text-center mt-4">
+                            <h4 class="text-dark">Kane</h4>
+                            <p class="mb-0">Restaurant Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member border border-1 p-4">
+                        <img src="#" alt="Utility Staff"
+                            class=" rounded-circle team-img">
+                        <div class="team-member-content text-center mt-4">
+                            <h4 class="text-dark">Lim</h4>
+                            <p class="mb-0">Utility Staff</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-dark">Book Your Table</h1>
+                    <hr>
+                </div>
+            </div>
+            <form action="#" class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="form-group col-md-6">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="contact" class="form-label">Contact</label>
+                            <input type="tel" class="form-control" id="contact">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="reservationDate" class="form-label">Reservation Date</label>
+                            <input type="date" class="form-control" id="reservationDate">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="time">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="numberOfGuests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="numberOfGuests">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" placeholder="message" id="specialRequests"
+                                rows="10"></textarea>
+                        </div>
+                        <div class="form-group col-md-12 text-center">
+                            <button type="submit" class="btn btn-brand">Submit</button>
+                        </div>
+
+                    </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Insta Post -->
+    <div class="row g-0 mt-5 border-custom">
+        <div class="col-lg-3 col-sm-6 p-1">
+            <div class="insta-post">
+                <img src="#" alt="" class="insta-post-img">
+                <a href="#" class="insta-btn">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-1">
+            <div class="insta-post">
+                <img src="#" alt="" class="insta-post-img">
+                <a href="#" class="insta-btn">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-1">
+            <div class="insta-post">
+                <img src="#" alt="" class="insta-post-img">
+                <a href="#" class="insta-btn">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-1">
+            <div class="insta-post">
+                <img src="#" alt="" class="insta-post-img">
+                <a href="#" class="insta-btn">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <section id="blog" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-dark">Blog Posts</h1>
+                    <p>Explore our latest blog posts for insightful articles and updates.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog1" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">Discover the Art of Flavorful
+                                    Breakfasts</a></h4>
+                            <p>Indulge in a culinary journey as we explore delightful breakfast recipes. From savory
+                                omelets to sweet pancakes,
+                                we've got your mornings covered. Learn new cooking techniques and elevate your breakfast
+                                game.</p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog2" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">Unveiling the Secrets of
+                                    Authentic Italian Cuisine</a>
+                            </h4>
+                            <p>Join us on a gastronomic adventure through the heart of Italy. From perfectly crafted
+                                pasta to heavenly tiramisu,
+                                experience the richness of Italian flavors. Get ready to elevate your culinary skills
+                                and bring a taste of Italy to
+                                your kitchen.</p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog3" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">Savor the Delight of Fresh
+                                    Seafood</a></h4>
+                            <p>Embark on a culinary journey exploring the world of fresh seafood. From succulent grilled
+                                prawns to mouthwatering
+                                fish tacos, dive into the ocean of flavors that seafood cuisine has to offer.</p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog 4" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">The Art of Grilling: BBQ
+                                    Extravaganza</a></h4>
+                            <p>Fire up your grills and get ready for a BBQ feast! Explore the techniques of grilling as
+                                we take you through a
+                                flavor-packed journey of smoked ribs, juicy burgers, and delectable grilled vegetables.
+                            </p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog 5" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">Sweet Indulgence:
+                                    Irresistible Desserts</a></h4>
+                            <p>Satisfy your sweet tooth with our collection of indulgent desserts. From decadent
+                                chocolate cakes to creamy fruit
+                                tarts, discover the art of creating irresistible desserts that will leave your taste
+                                buds delighted.</p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fluid p-3 my-4">
+                    <div class="blog-post d-flex align-items-center">
+                        <img src="#" alt="blog 6" class="blog-img">
+                        <div class="blog-post-content p-4">
+                            <p>January 1, 2024</p>
+                            <h4 class="mt-4 mb-4"><a href="#" class="text-decoration-none">Wholesome and Hearty: Comfort
+                                    Food Classics</a></h4>
+                            <p>Experience the warmth of comforting classics. From hearty stews to soul-soothing soups,
+                                delve into the world of
+                                comfort food that brings joy to every bite. Discover recipes that nourish both body and
+                                soul.</p>
+                            <a href="#" class="text-decoration-none">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-4 mt-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md">
+                    <h2 class="text-center mb-4 text-dark">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold"><i class="bi bi-clock"></i>
+                                Opening Hours:</span> Mon-Fri 8:00-22:00 & Sat -Sun 12:00 - 20:00
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"><i class="bi bi-telephone"></i>
+                                Phone Number:</span> +60123456789
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"><i class="bi bi-envelope"></i>
+                                Email:</span> abc123@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"><i class="bi bi-geo-alt"></i>
+                                Main Location:</span> xx xxxxx xxxxxxxxxx
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63803.81950514881!2d102.91477075734853!3d1.8499925220482873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d056d7332d5253%3A0xc79579f5b9d8c47!2sBatu%20Pahat%2C%20Johor!5e0!3m2!1sen!2smy!4v1703070107176!5m2!1sen!2smy"
+                        allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024 Yum Palette T</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-white"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
